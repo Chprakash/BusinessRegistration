@@ -35,4 +35,14 @@ public class ClientController {
 			@RequestBody @Valid ClientDTO clientDTO) {
 		return clientService.getClientLogin(clientDTO);
 	}
+	
+    @GetMapping(value = "/private")
+    public String privateArea(){
+        return "Private area";
+    }
+    
+    @GetMapping(value = "/")
+    public String index(){
+        return "Hello world";
+    }
 }
