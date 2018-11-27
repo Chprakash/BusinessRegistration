@@ -22,7 +22,7 @@ public class Client extends MasterEntity{
 	private Long id;
 	private String firstName;
 	private String lastName;
-	private String emailID;
+	private String emailID;	
 	private String password;
     private List<Role> roles;
 	
